@@ -1,0 +1,11 @@
+{
+  "name": "custom-dns-server",
+  "version": "1.0.0",
+  "description": "A custom DNS server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Divij Sharma",
+  "license": "ISC"
+}
