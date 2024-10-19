@@ -1,9 +1,11 @@
 const dgram = require('dgram');
+const dnsPacket = require('dns-packet');
 
 const server = dgram.createSocket('udp4');
 
 server.on('message', (msg, rinfo) => {
-        console.log(msg)
+        const request = dnsPacket.decode(msg);
+        console.log(request.questions)
         console.log(rinfo)
     }
 );
