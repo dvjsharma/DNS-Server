@@ -1,5 +1,6 @@
 const dgram = require('dgram');
 const dnsPacket = require('dns-packet');
+const DNSDB = require('./db');
 
 const server = dgram.createSocket('udp4');
 
